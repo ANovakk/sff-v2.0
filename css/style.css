@@ -15,11 +15,11 @@ body{
 
 .header{
     background-color: red;
-    width: 100%;
+    /* width: 100%; */
 }
 .main{
     background-color: green;
-    width: 100%;
+    /* width: 100%; */
 }
 .footer{
     background-color: blue;
@@ -41,8 +41,10 @@ body{
     border: 2px solid black;
     border-radius: 50px;
     padding: 0.5rem;
-    width: 6rem;
+    width: fit-content;
+    background-color: #660005;
 }
+
 
 .full_service{
     background-color: #C9000B;
@@ -53,14 +55,29 @@ body{
     background-color: #821117;
 }
 
+.full_service:nth-child(odd) .name{
+    background-color: #C9000B;
+}
+
+.full_service .service_text:hover{
+    background-color: #821117;
+}
+
+.full_service:nth-child(odd) .service_text:hover{
+    background-color: #C9000B;
+}
+
 .service{
     display: flex;
     margin-top: 2rem
 }
 
 .service_text{
+    border-radius: 4rem;
+    padding: 4rem;
     max-width: 35rem;
     min-width: 20rem;
+    transition: background-color 0.3s ease 0s;
 }
 
 .service_images{
@@ -68,7 +85,7 @@ body{
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 1rem;
-    row-gap: 1rem;
+    row-gap: 0.5rem;
 }
 
 .service_image{
@@ -82,17 +99,17 @@ body{
 
 .our_advantages{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     grid-gap: 1rem; 
     padding: 0 2rem;
 }
 
-.advantage img{
-    width: 2rem;
-}
-
 .advantage{
     text-align: center;
+}
+
+.advantage img{
+    width: 2rem;
 }
 
 
@@ -128,14 +145,33 @@ body{
 
     /* SERVICES */
 
-    .service:nth-child(odd) .service_text{
+    .full_service:nth-child(even) .service_text{
         order: 2;
     }
     
-    .service:nth-child(odd) .service_images{
+    .full_service:nth-child(even) .service_images{
         order: 1;
     }
 
     /* SERVICES */
 }
+
+@media screen and (min-width: 1400px){
+
+    html{
+        font-size: 24px;
+    }
+
+    /* SERVICES */
+
+    .service_text{
+        max-width: 60rem;
+        min-width: 40rem;
+    }
+
+    /* SERVICES */
+
+}
+
+
 
