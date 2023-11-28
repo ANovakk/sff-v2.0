@@ -6,7 +6,7 @@
   }
 
 html{
-    font-size: 20px;
+    font-size: 16px;
 }
 
 body{
@@ -67,16 +67,16 @@ body{
 .our_advantages{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-    grid-gap: 2rem; 
+    grid-gap: 1rem; 
+    padding: 0 2rem;
 }
 
 .advantage img{
-    width: 200px;
-    height: 200px;
+    width: 2rem;
 }
 
-.advantage p{
-    /* text-align: center; */
+.advantage{
+    text-align: center;
 }
 
 
@@ -84,18 +84,20 @@ body{
 
 @media screen and (max-width: 50rem) {
 
+    /* html{
+        font-size: 10px;
+    } */
+
     /* SERVICES */
 
     .service{
         flex-wrap: wrap;
     }
     .service_text{
+        margin: 0 auto;
         order: 1;
     }
     .service_images{
-        margin-left: 0;
-        margin-top: 1rem;
-        justify-content: space-between;
         order: 2;
     }
     .main{
