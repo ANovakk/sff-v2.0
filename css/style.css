@@ -37,6 +37,11 @@ body{
 /* TEMPORARY */
 /* SERVICES */
 
+.div_name{
+    padding: 2rem;
+    background-color: #C9000B;
+}
+
 .name{
     border: 2px solid black;
     border-radius: 50px;
@@ -46,30 +51,29 @@ body{
 }
 
 
-.full_service{
+.service{
     background-color: #C9000B;
     padding: 2rem;
 }
 
-.full_service:nth-child(odd){
+.service:nth-child(odd){
     background-color: #821117;
 }
 
-.full_service:nth-child(odd) .name{
+.service:nth-child(odd) .name{
     background-color: #C9000B;
 }
 
-.full_service .service_text:hover{
+.service_text:hover{
     background-color: #821117;
 }
 
-.full_service:nth-child(odd) .service_text:hover{
+.service:nth-child(odd) .service_text:hover{
     background-color: #C9000B;
 }
 
 .service{
     display: flex;
-    margin-top: 2rem
 }
 
 .service_text{
@@ -128,11 +132,9 @@ body{
     }
     .service_text{
         /* margin: 0 auto; */
-        order: 1;
     }
     .service_images{
         justify-content: flex-start;
-        order: 2;
     }
     .main{
         background-color: aquamarine;
@@ -145,11 +147,11 @@ body{
 
     /* SERVICES */
 
-    .full_service:nth-child(even) .service_text{
+    .service:nth-child(odd) .service_text{
         order: 2;
     }
     
-    .full_service:nth-child(even) .service_images{
+    .service:nth-child(odd) .service_images{
         order: 1;
     }
 
