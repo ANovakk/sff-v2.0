@@ -9,23 +9,70 @@ html{
     font-size: 16px;
 }
 
-body{
-    background-color: #C9000B;
+body, .navbar a{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #edf0f1;
     text-decoration: none;
 }
+
+.body{
+    background-color: #C9000B;
+}
 /* b50e17 светлый */
 
 
 .header{
-    background-color: red;
-    /* width: 100%; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
+
+.header::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #A20D15;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+
+.logo{
+    width: 10rem;
+}
+
+.navbar{
+    font-size: 1.4rem;
+}
+
+.navbar a{
+    margin-left: 2rem;
+}
+
+#check{
+    display: none;
+}
+
+.icons{
+    font-size: 3rem;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+    right: 3rem;
+}
+
 .main{
     background-color: green;
     /* width: 100%; */
+    margin-top: 9rem;
 }
 .footer{
     background-color: blue;
@@ -89,7 +136,7 @@ body{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 1rem;
+    margin-top: 4rem;
     row-gap: 0.5rem;
 }
 
@@ -152,7 +199,7 @@ body{
 
 /* ADVANTAGES */
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
 
     /* html{
         font-size: 10px;
@@ -170,7 +217,66 @@ body{
     /* SERVICES */
 }
 
-@media screen and (min-width: 800px){
+@media (max-width: 1075px){
+    .header{
+        /* padding: 0 3rem; */
+    }
+    .logo{
+        width: 9rem;
+    }
+    
+    .navbar{
+        font-size: 1rem;
+    }
+    
+    .navbar a{
+        margin-left: 1.7rem;
+    }
+
+}
+
+@media (max-width: 860px){
+    .icons{
+        display: block;
+        display: inline-flex;
+    }
+
+    #check:checked~.icons #menu-icon{
+        display: none;
+    }
+
+    .icons #close-icon{
+        display: none;
+    }
+
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+
+    .navbar{
+        position: absolute;
+        top:100%;
+        left:0;
+        width: 100%;
+        height: 0;
+        background-color: #b90f18;
+        overflow: hidden;
+        transition: .3s ease;
+    }
+
+    #check:checked~.navbar{
+        height: 17rem;
+    }
+
+    .navbar a{
+        display: block;
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 800px){
 
     /* SERVICES */
 
@@ -191,7 +297,8 @@ body{
     /* SERVICES */
 }
 
-@media screen and (min-width: 1200px){
+
+@media (min-width: 1200px){
 
     /* html{
         font-size: 19px;
@@ -207,7 +314,7 @@ body{
     /* SERVICES */
 }
 
-@media screen and (min-width: 1650px){
+@media (min-width: 1650px){
 
     html{
         font-size: 23px;
