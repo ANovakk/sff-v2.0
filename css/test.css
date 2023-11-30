@@ -268,30 +268,7 @@ body, .navbar a, .row a{
 }
 
 /* ADVANTAGES */
-
-@media (max-width: 1075px){
-
-  .service{
-    flex-wrap: wrap;
-  }
-  .logo{
-      width: 9rem;
-  }
   
-  .navbar{
-      font-size: 1rem;
-  }
-  
-  .navbar a{
-      margin-left: 1.7rem;
-  }
-
-  .about h1{
-      font-size: 1.3rem;
-  }
-
-}
-
 @media (max-width: 860px){
   .icons{
       display: block;
@@ -333,6 +310,39 @@ body, .navbar a, .row a{
 
 }
 
+@media (max-width: 1075px){
+
+  .service{
+    flex-wrap: wrap;
+  }
+  .logo{
+      width: 9rem;
+  }
+  
+  .navbar{
+      font-size: 1rem;
+  }
+  
+  .navbar a{
+      margin-left: 1.7rem;
+  }
+
+  .about h1{
+      font-size: 1.3rem;
+  }
+
+}
+
+@media (max-width: 1300px) {
+  .service_images {
+      flex-direction: column;
+  }
+
+  .service_images img {
+      width: 100%;
+  }
+}
+
 @media (min-width: 1175px){  
   .service:nth-child(odd) .service_text{
       order: 2;
@@ -341,18 +351,18 @@ body, .navbar a, .row a{
   .service:nth-child(odd) .service_images{
       order: 1;
   }
-  .service_text{
+  /* .service_text{
       max-width: 25rem;
       min-width: 20rem;
-  }
+  } */
 }
 
 
 @media (min-width: 1200px){
-  .service_text{
+  /* .service_text{
       max-width: 30rem;
       min-width: 25rem;
-  }
+  } */
 }
 
 @media (min-width: 1650px){
@@ -360,10 +370,10 @@ body, .navbar a, .row a{
   html{
       font-size: 23px;
   }
-  .service_text{
+  /* .service_text{
       max-width: 30rem;
       min-width: 25rem;
-  }
+  } */
   .advantages-item{
       width: 20rem;
   }
