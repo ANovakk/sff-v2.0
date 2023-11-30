@@ -20,15 +20,15 @@
             </label>
 
             <nav class="navbar">
-                <a href="">Главная</a>
-                <a href="">Услуги</a>
+                <a href="#main">Главная</a>
+                <a href="#services">Услуги</a>
                 <a href="#advantages_list">Приемущества</a>
                 <a href="">Портфолио</a>
                 <a href="">Контакты</a>
             </nav>
         </header>
         <main class="main">
-            <div class="about">
+            <div class="about" id="main">
                 <h1>Услуги лазерной гравировки компании Квант</h1>
                 <div class="div_about">
                     <div class="name about_name">
@@ -42,7 +42,7 @@
                     </p>
                 </div>
             </div>
-            <div class="services">
+            <div class="services" id="services">
                 <div class="div_name name_services">
                     <div class="name name_service">
                         <p>УСЛУГИ</p>
@@ -185,7 +185,41 @@
             </div>
             
         </main>
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <div class="row">
+                <h2 class="footer__rows__h">Контакты</h2>
+                <ul class="contact__info">
+                    <li>
+                        <img class="contact__info_img" src="img/location.svg" alt="">
+                        <p>г. Алматы, ул. Макатаева, 127/3, офис 207</p>
+                    </li>
+                    <li>
+                        <img class="contact__info_img" src="img/phone.svg" alt="">
+                        <p>+7 777 212 09 60</p>
+                    </li>
+                    <li>
+                        <img class="contact__info_img" src="img/mail.svg" alt="">
+                        <p>k.laser@mail.ru</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul class="contact__info contact__info2">
+                    <li>
+                        <a href="https://www.instagram.com/kvant_graver/" target="_blank">
+                            <img class="inst_logo" src="img/inst.svg" alt="">
+                            <p>kvant_graver</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/anovak1975/" target="_blank">
+                            <img class="inst_logo" src="img/inst.svg" alt="">
+                            <p>anovak1975</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </body>
 
 </html>

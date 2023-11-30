@@ -7,9 +7,10 @@
 
 html{
     font-size: 16px;
+    background-color: #C9000B;
 }
 
-body, .navbar a{
+body, .navbar a, .row a{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #edf0f1;
@@ -21,6 +22,7 @@ body, .navbar a{
 }
 /* b50e17 светлый */
 
+/* HEADER */
 
 .header{
     position: fixed;
@@ -55,6 +57,11 @@ body, .navbar a{
 
 .navbar a{
     margin-left: 2rem;
+    transition: color 0.3s ease 0s;
+}
+
+.navbar a:hover{
+    color: #821117;
 }
 
 #check{
@@ -69,14 +76,54 @@ body, .navbar a{
     right: 3rem;
 }
 
-.main{
-    background-color: green;
-    /* width: 100%; */
-}
+/* HEADER */
+
+
+/* FOOTER */
 .footer{
-    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 6rem;
+    background-color: #A20D15;
+}
+.contact__info2 li a p{
+    transition: color 0.3s ease 0s;
+  }
+  
+.contact__info2 li a p:hover{
+    color: #821117;
 }
 
+
+.contact-h1{
+    font-size: 70px;
+}
+
+.row{
+    padding: 20px;
+} 
+.quick__links__list{
+    columns: 2;
+}
+.quick__links__list, .contact__info{
+    list-style-type: none;
+    margin: 20px 0px;
+}
+.quick__links__list li{
+    padding: 5px 0px;
+}
+
+.contact__info li{
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+}  
+
+.inst_logo{
+    height: 3rem;
+}
+
+/* FOOTER */
 /* TEMPORARY */
 /* .services, .our_advantages{
     border: 4px solid blueviolet;
@@ -91,7 +138,7 @@ body, .navbar a{
 /* ABOUT */
 .about{
     background-color: #C9000B;
-    padding-top: 15rem;
+    padding-top: 200px;
     padding-left: 6rem;
     padding-right: 6rem;
     font-size: 1.2rem;
@@ -118,13 +165,14 @@ body, .navbar a{
 /* ABOUT */
 /* SERVICES */
 
+.services{
+    padding-top: 200px;
+    background-color: #821117;
+}
 .div_name{
     padding: 2rem 6rem;
 }
 
-.name_services{
-    background-color: #821117;
-}
 
 .name_service{
     background-color: #660005;
@@ -187,6 +235,7 @@ body, .navbar a{
 /* ADVANTAGES */
 
 .advantages_list{
+    padding-top: 200px;
     background-color:#C9000B;
 }
 
@@ -362,6 +411,4 @@ body, .navbar a{
     /* SERVICES */
 
 }
-
-
 
