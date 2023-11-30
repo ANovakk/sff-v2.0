@@ -249,11 +249,17 @@ body, .navbar a, .row a{
     flex-wrap: wrap;
     border: 0.5rem solid #edf0f1;
     border-radius: 4rem;
+    padding: 5rem 0;
+    gap: 1rem;
 }
 
 .advantages-item{
     text-align: center;
-    width: 18rem;
+    width: 16rem;
+}
+.advantages-item img{
+    width: 120px;
+    height: 120px;
 }
 
 /* .our_advantages{
@@ -406,6 +412,10 @@ body, .navbar a, .row a{
     .service_text{
         max-width: 35rem;
         min-width: 25rem;
+    }
+
+    .advantages-item{
+        width: 20rem;
     }
 
     /* SERVICES */
